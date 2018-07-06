@@ -33,7 +33,7 @@ namespace WordCounter
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Mad Libs!");
+                await context.Response.WriteAsync("error");
             });
         }
     }
