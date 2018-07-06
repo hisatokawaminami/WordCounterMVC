@@ -14,9 +14,9 @@
   <div class="container">
     <h1>Result</h1>
 
-    <p>Word: @Model.GetInputWord()</p>
-    <p>Sentence/list of words: @Model.GetInputSentence()</p>
-    <p>The word "@Model.GetInputWord()" was appeared @Model.CountMatching() times</p>
+    <p><em>Word:</em> @Model.GetInputWord()</p>
+    <p><em>Sentence/list of words:</em> @Model.GetInputSentence()</p>
+    <p>The word <strong><font color="red">"@Model.GetInputWord()"</font></strong> was appeared <strong><font color= "red">@Model.CountMatching()</font></strong> times</p>
 
     <a href="/wordcounter/play">Play Again</a>
   </div>

@@ -1,12 +1,12 @@
-# Epicodus Week6 Project Word Counter
+# Epicodus Week7 Project Word Counter MVC
 
 ## Created
 
-06/29/2018
+07/06/2018
 
 ## About
 
-Create a program that checks how frequently a word appears in a given string
+Create a program that checks how frequently a word appears in a given string with MVC
 
 ## Spec
 
@@ -26,7 +26,7 @@ C#, .NET Core 1.1
 ## Installation
 
 Clone from:
-https://github.com/hisatokawaminami/WordCounter.git
+https://github.com/hisatokawaminami/WordCounterMVC.git
 
 ## Credits
 Hisato Kawaminami
