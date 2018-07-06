@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Counter</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <style>
+  body
+  {
+    background-color: lightblue;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Result</h1>
+
+    <p>Word: @Model.GetInputWord()</p>
+    <p>Sentence/list of words: @Model.GetInputSentence()</p>
+    <p>The word "@Model.GetInputWord()" was appeared @Model.CountMatching() times</p>
+
+    <a href="/wordcounter/play">Play Again</a>
+  </div>
+</body>
+<html>

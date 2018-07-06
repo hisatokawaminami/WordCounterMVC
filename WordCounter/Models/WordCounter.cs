@@ -18,20 +18,24 @@ namespace WordCounter.Models
     {
       return _inputWord;
     }
+    public void SetInputWord(string newInputWord)
+    {
+      _inputWord = newInputWord;
+    }
+
     public string GetInputSentence()
     {
       return _inputSentence;
     }
-  //   public string[] InputSentenceToSplitArray()
-  //   {
-  // //     string[] temp = _inputSentence.Split(' ');
-  //     return _inputSentence.Split(' ');
-  //   }
-  // }
+    public void SetInputSentence(string newInputSentence)
+    {
+      _inputSentence = newInputSentence;
+    }
+
     public int CountMatching()
     {
       int count = 0;
-      string[] temp = _inputSentence.ToLower().Split(' ');
+      string[] temp = _inputSentence.ToLower().Split(' ', ',','.','-','+','=','*','/', '_',':',';');
       for(int i = 0; i < temp.Length; i++)
       {
         if (_inputWord == temp[i])
@@ -42,6 +46,8 @@ namespace WordCounter.Models
       }
       return count;
     }
+  }
+ }
 
   // public class Program
   //   {
@@ -59,5 +65,3 @@ namespace WordCounter.Models
   //       Console.WriteLine("The word *" + inputWord + "*" + " was entered " + count + " times");
   //     }
   //   }
- }
-}
